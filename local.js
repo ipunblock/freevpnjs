@@ -4,7 +4,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-$(document).ready(function(){
+function docReady(fn){
 	var data = { type: "FROM_PAGE", text: "loaded" };
 	window.postMessage(data, "*");
 
@@ -54,7 +54,7 @@ async function displayConnected(txt) {
 }
 // E
 
-});
+}
 
 
 	(function() {
